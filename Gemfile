@@ -35,6 +35,7 @@ gem "activeadmin"
 gem "ransack"
 gem 'carrierwave'
 gem 'rmagick'
+gem "fog"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
