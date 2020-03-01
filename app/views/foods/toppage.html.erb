@@ -3,7 +3,7 @@
 <div>
   <p>
   <% if user_signed_in? %>
-    <p>コックとしてアクセスするにはユーザーログアウトをしてください</p>
+    <p class="prompt-login">コックとしてアクセスするにはユーザーログアウトをしてください</p>
   <% else %>
     <% if cock_signed_in? %>
       <span class="login-block-left"><%= link_to "コック専用ログアウト", destroy_cock_session_path, method: :delete, class:"btn btn-primary btn-lg" %></span>

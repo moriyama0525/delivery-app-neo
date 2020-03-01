@@ -1,6 +1,6 @@
 <h2>メニューを追加する</h2>
-<form>
-  <%= form_for @food do |f| %>
+<%= form_for @food do |f| %>
+  <form>
     <%= f.hidden_field :cock_id, :value => current_cock.id %>
     <div class="form-group">
       <%= f.label :image, "画像をアップロード" %><br>
@@ -15,5 +15,5 @@
       <%= f.text_area :content, class: "form-control" %>
     </div>
     <%= f.submit "追加する", class: "btn btn-primary" %>
-  <% end %>
-</form>
+  </form>
+<% end %>
